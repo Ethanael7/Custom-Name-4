@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The King of Settlement 4 - Acts 1 & 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/acts.css">
+</head>
+<body>
+    <nav id="mainNav">
+        <div class="logo">SETTLEMENT 4</div>
+        <div class="nav-links">
+            <a href="#home" data-page="home" class="active">Home</a>
+            <a href="#act1" data-page="act1">Act 1: Bucket</a>
+            <a href="#act2" data-page="act2">Act 2: Castle</a>
+            <a href="#sources" data-page="sources">Sources</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>The King of Settlement 4</h1>
+        <p class="hero-deck">A backroad can look like a picture book—until you notice who the picture leave out.</p>
+        
+        <div class="story-path">
+            <div id="traveler" class="traveler"><i class="fas fa-walking"></i></div>
+            <svg class="path-line" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M25,55 Q40,45 55,40 T78,18" stroke="rgba(212,175,55,0.3)" stroke-width="0.4" fill="none" stroke-dasharray="4,4"/>
+            </svg>
+            
+            <a href="#act1" class="story-icon icon-act1" data-target="act1" aria-label="Begin Act 1: Life on the Bucket">
+                <i class="fas fa-road"></i>
+                <span class="icon-label">Act 1</span>
+            </a>
+            <a href="#act2" class="story-icon icon-act2" data-target="act2" aria-label="Begin Act 2: The Village Castle">
+                <i class="fas fa-chess-rook"></i>
+                <span class="icon-label">Act 2</span>
+            </a>
+        </div>
+    </section>
+
+    <main id="story-container">
+        <!-- ACT 1 -->
+        <article id="act1-page" class="story-page act-1" data-act="1" hidden>
+            <div class="story-content">
+                <button class="back-btn" data-action="home"><i class="fas fa-arrow-left"></i> Return to Journey</button>
+                <h2 class="section-title">Life on the Bucket</h2>
+                <p class="subsection-deck">A backroad can look like a picture book—until you notice who the picture leave out.</p>
+                <div class="section-progress" id="act1-progress"></div>
+                
+                <section id="act1-postcard" class="subsection" data-order="1">
+                    <h3 class="subsection-title"><i class="fas fa-image"></i> Postcard Trinidad</h3>
+                    <p class="narrator-voice">Settlement 4 does shine like one of them primary-school illustrations—dusty road, savannah open wide, little life moving easy in the heat. People passing through will call it “simple.” They will say it sweet. But I living inside the frame, so I seeing the nice parts and the rot parts together, like they stitched with the same thread.</p>
+                    <button class="data-trigger" data-overlay="A1-EDU-ATTEND" aria-expanded="false" aria-controls="panel-A1-EDU-ATTEND"><i class="fas fa-chart-bar"></i> School attendance & completion — national snapshot (2022)</button>
+                </section>
+                <section id="act1-omitted" class="subsection" data-order="2" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-user-slash"></i> The omitted feature</h3>
+                    <p class="narrator-voice">Illustrators never draw the boy who planning to spend his teenage years perched on a paint bucket. They don’t draw the crate by the backroad, the quiet watching, the waiting. That is the other Trinidad too—the part where you learn early that you could be young and already feel finished.</p>
+                    <button class="data-trigger" data-overlay="A1-EDU-DROPOUT" aria-expanded="false" aria-controls="panel-A1-EDU-DROPOUT"><i class="fas fa-chart-pie"></i> Secondary dropouts — how often does it happen?</button>
+                </section>
+                <section id="act1-labor" class="subsection" data-order="3" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-coins"></i> “I ain’t no fool” — why school didn’t hold me</h3>
+                    <p class="narrator-voice">I didn’t tell myself I drop out because I stupid. I know I could talk proper when I have to, and I know I could do the work when the work real. But when the classrooms empty of teachers and full of noise, you start to measure value different. “Free education” sound good as a slogan; “free paycheck” feel like something you could hold.</p>
+                    <button class="data-trigger" data-overlay="A1-LABOUR-YOUTH" aria-expanded="false" aria-controls="panel-A1-LABOUR-YOUTH"><i class="fas fa-chart-line"></i> Youth unemployment — the gap between young and all workers</button>
+                </section>
+                <section id="act1-foster" class="subsection" data-order="4" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-user-friends"></i> Foster (and the gravity of following)</h3>
+                    <p class="narrator-voice">Foster was older, steadier—like he always had a plan even when the plan was just to disappear from school and reappear on the road. I didn’t like how easy it was for him. I did need reasons. I did need to feel like I was proving something to somebody. And when you hungry for a pattern to follow, you does fall in line behind the first person who walking like he sure.</p>
+                </section>
+                <div class="act-navigation">
+                    <button class="act-nav-btn" id="act1-prev" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                    <button class="act-nav-btn" id="act1-next">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </article>
+
+        <!-- ACT 2 -->
+        <article id="act2-page" class="story-page act-2" data-act="2" hidden>
+            <div class="story-content">
+                <button class="back-btn" data-action="home"><i class="fas fa-arrow-left"></i> Return to Journey</button>
+                <h2 class="section-title">The Village Castle</h2>
+                <p class="subsection-deck">A housing block becomes a fortress when everybody agrees it is one.</p>
+                <div class="section-progress" id="act2-progress"></div>
+                
+                <section id="act2-king" class="subsection" data-order="1">
+                    <h3 class="subsection-title"><i class="fas fa-crown"></i> Name the King, choose the side</h3>
+                    <p class="narrator-voice">In Settlement 4, power doesn’t come with a crown—it come with men willing to move when one man breathe. That is why people call him King like it’s a law of nature. If trouble ever decide to wake up and get busy, you want to believe you sitting on the winning side, even if “winning” is just surviving the week.</p>
+                </section>
+                <section id="act2-chessboard" class="subsection" data-order="2" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-chess-board"></i> The chessboard — corners, blind spots, and bodies</h3>
+                    <p class="narrator-voice">He live high-up, and the rest of the fellas scatter out below like pieces on a board. Nobody does stand anywhere by accident. Every corner have eyes. Every blind spot have a shadow waiting. The place could look like pure neglect to outsiders, but inside it have order—dirty order.</p>
+                </section>
+                <section id="act2-filth" class="subsection" data-order="3" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-warehouse"></i> Filth as infrastructure</h3>
+                    <p class="narrator-voice">The garbage, the loose boards, the overgrown yard—none of that is random. Mess does make pockets, and pockets does hide things. The uglier it look, the easier it is to tuck away what not supposed to be seen. You could call it stupidity if you watching from far; up close it’s planning.</p>
+                    <button class="data-trigger" data-overlay="A2-YTRC-DRUG" aria-expanded="false" aria-controls="panel-A2-YTRC-DRUG"><i class="fas fa-pills"></i> Drug-offence pipeline — youth remanded at YTRC (2018–2022)</button>
+                </section>
+                <section id="act2-silence" class="subsection" data-order="4" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-balance-scale"></i> Thursday morning — sirens, blue lights, and silence</h3>
+                    <p class="narrator-voice">Police does come like theater: sirens, lights, a little swagger in the morning sun. But everybody in the settlement know how that show does end. You could call it fear or loyalty, but I call it economy—nobody getting paid enough to dig through rust and risk their skin. When questions fall, voices does vanish.</p>
+                    <button class="data-trigger" data-overlay="A2-CRIME-PIPELINE" aria-expanded="false" aria-controls="panel-A2-CRIME-PIPELINE"><i class="fas fa-filter"></i> From reports → prosecutions → convictions (Crime‐2024)</button>
+                </section>
+                <section id="act2-lookout" class="subsection" data-order="5" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-eye"></i> The job — to sit, to watch</h3>
+                    <p class="narrator-voice">My work wasn’t running and shooting. My work was sitting. Sitting so long the road begin to feel like a classroom and the cars passing like lessons. People behind dark tints does judge you quick—like you wasting life. But from where I was sitting, they looked chained too, just chained cleaner.</p>
+                </section>
+                <section id="act2-bodie" class="subsection" data-order="6" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-dog"></i> Bodie and Bone — softness versus reputation</h3>
+                    <p class="narrator-voice">Boredom does rot the mind fast, so Foster bring a dog to make the hours feel human. The little dog was treated like royalty in a place where most dogs living rough. And then you had Bone—man hungry for a name, hungry for fear. In Settlement 4, respect does travel with violence, and plenty people willing to pay that price just to be seen as “big.”</p>
+                    <button class="data-trigger" data-overlay="A2-CONVICT-AGE" aria-expanded="false" aria-controls="panel-A2-CONVICT-AGE"><i class="fas fa-users"></i> Convictions by age group (drug & drug‐related offences)</button>
+                </section>
+                <section id="act2-double" class="subsection" data-order="7" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-book"></i> The double life — textbook in hand, lookout in head</h3>
+                    <p class="narrator-voice">I wasn’t fully gone from school, not inside my skull. I start bringing a textbook like a secret—science by day, lookout by day too. I learn words like fulcrum and balance, and I wonder if a life could balance same way. But I still hide the book quick when a next corner boy pass. Pride is a funny thing: it does make you ashamed of your own escape plan.</p>
+                </section>
+                <section id="act2-home" class="subsection" data-order="8" hidden>
+                    <h3 class="subsection-title"><i class="fas fa-home"></i> Home pressure — and the walk back into danger</h3>
+                    <p class="narrator-voice">At home, my mother mouth could cut deeper than any blade. She tired, she angry, she calling me “big man” like it a curse. I leave the house and head back to the kiosk anyway, because outside at least the rules sound simple. And when the evening settle, you could feel something coming—like cold wind before rain.</p>
+                </section>
+                <div class="act-navigation">
+                    <button class="act-nav-btn" id="act2-prev" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                    <button class="act-nav-btn" id="act2-next">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </article>
+
+        <!-- SOURCES -->
+        <article id="sources-page" class="story-page" hidden>
+            <div class="story-content">
+                <button class="back-btn" data-action="home"><i class="fas fa-arrow-left"></i> Return to Journey</button>
+                <h2 class="section-title">Data Sources & Attribution</h2>
+                <div style="margin-top: 30px;">
+                    <h3 style="color: var(--gold); margin: 25px 0 15px;">Official Statistics</h3>
+                    <ul style="margin-left: 20px; line-height: 2;">
+                        <li><strong>Central Statistical Office (CSO)</strong> — MICS 2022, Crime Statistics 2024, CSSP unemployment data</li>
+                        <li><strong>Ministry of Education</strong> — Education Statistics Digest 2019/20</li>
+                        <li><strong>Ministry of National Security</strong> — DIN-TT Annual Report 2022, YTRC data</li>
+                    </ul>
+                    <h3 style="color: var(--gold); margin: 25px 0 15px;">Literary Source</h3>
+                    <p style="margin-left: 20px; line-height: 1.8;">Excerpts from <em>The King of Settlement 4</em> by Kevin Jared Hosein, published by the Commonwealth Foundation. Quotations used under fair dealing for commentary/criticism with attribution.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Journey Overlay -->
+    <div id="journeyOverlay" class="journey-overlay" aria-hidden="true">
+        <div class="journey-text" id="journeyText">Journeying...</div>
+        <div class="journey-progress"><div class="journey-progress-bar" id="progressBar"></div></div>
+    </div>
+
+    <!-- Dynamic Data Panel Container -->
+    <div id="dataPanel" class="data-panel" role="dialog" aria-hidden="true">
+        <button class="data-panel__close" aria-label="Close data panel"><i class="fas fa-times"></i></button>
+        <h4 id="panelTitle" class="data-panel__title"></h4>
+        <p id="panelCaption" class="data-panel__caption"></p>
+        <div id="panelChart" class="data-panel__chart"></div>
+        <p id="panelSource" class="data-panel__source"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Settlement 4 Digital Experience. Based on work by Kevin Jared Hosein.</p>
+        <p style="margin-top: 8px;">Data sourced from <a href="https://cso.gov.tt" target="_blank">CSO Trinidad & Tobago</a></p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

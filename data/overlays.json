@@ -1,0 +1,44 @@
+{
+  "A1-EDU-ATTEND": {
+    "title": "School attendance & completion in T&T (MICS 2022)",
+    "caption": "Completion drops from 99% (primary) to 85% (upper secondary)—and attendance gaps widen by sex and income.",
+    "chartType": "bar",
+    "data": { "attendance": [93, 78, 79], "completion": [99, 95, 85], "labels": ["Primary", "Lower Sec", "Upper Sec"] },
+    "source": "Central Statistical Office (MICS 2022 DataNett snapshot)."
+  },
+  "A1-EDU-DROPOUT": {
+    "title": "Secondary school dropouts (Gov’t & Gov’t‐Assisted, 2019/20)",
+    "caption": "In 2019/20, 508 students were recorded as dropouts; 61% were male.",
+    "chartType": "donut",
+    "data": { "total": 508, "male": 310, "female": 198, "rate": "0.63%" },
+    "source": "Ministry of Education, Education Statistics Digest (2019/2020)."
+  },
+  "A1-LABOUR-YOUTH": {
+    "title": "Youth unemployment (15–24) vs overall (2025 Q3)",
+    "caption": "Youth unemployment rises above the national rate—especially for young women in 2025 Q3.",
+    "chartType": "line",
+    "data": { "youth_male": [7.4, 8.2, 8.0], "youth_female": [9.6, 14.6, 17.4], "overall": [4.9, 3.8, 4.8], "quarters": ["Q1", "Q2", "Q3"] },
+    "source": "Central Statistical Office, Continuous Sample Survey of Population (CSSP)."
+  },
+  "A2-YTRC-DRUG": {
+    "title": "Young offenders remanded for drug offences (YTRC, 2018–2022)",
+    "caption": "The DIN‐TT report shows remands falling from 24 (2018) to 1 (2022) for drug offences.",
+    "chartType": "line",
+    "data": { "years": [2018, 2019, 2020, 2021, 2022], "remands": [24, 16, 2, 1, 1], "total": 44 },
+    "source": "Ministry of National Security (DIN‐TT Annual Report 2022; YTRC data)."
+  },
+  "A2-CRIME-PIPELINE": {
+    "title": "Crime‐2024: reports → prosecutions → convictions",
+    "caption": "In 2024, the system recorded a large drop from reports to convictions—helpful context for “nothing seen, nothing said.”",
+    "chartType": "bar",
+    "data": { "reports": 27187, "prosecutions": 6200, "convictions": 1037 },
+    "source": "Central Statistical Office Crime Statistics (Crime‐2024)."
+  },
+  "A2-CONVICT-AGE": {
+    "title": "Convictions by age group (drug & drug‐related, 2018–2022)",
+    "caption": "Over 2018–2022, DIN‐TT reports 3,650 drug/drug‐related convictions, 98% male.",
+    "chartType": "bar",
+    "data": { "total": 3650, "male_pct": 98, "age_groups": ["15-19", "20-24", "25-29"], "values": [420, 1850, 980] },
+    "source": "Ministry of National Security (DIN‐TT Annual Report 2022; Prison Service data)."
+  }
+}
