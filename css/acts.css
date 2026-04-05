@@ -4,6 +4,19 @@
 .story-page.act-2 h1, .story-page.act-2 h2, .story-page.act-2 h3 { color:#7a9cc4; }
 .story-page.act-1 .story-content { background:rgba(245,241,230,0.95); border-color:var(--act1-accent); }
 .story-page.act-2 .story-content { background:rgba(18,18,24,0.95); border-color:var(--act2-steel); }
+/* Act 3: The Cost of Power — Dark, intense, climactic */
+.story-page.act-3 { background: #1a0f0f; color: #f0e0d0; }
+.story-page.act-3 h1, .story-page.act-3 h2, .story-page.act-3 h3 { color: #c44; }
+.story-page.act-3 .story-content { background: rgba(26, 15, 15, 0.95); border-color: #8b2323; }
+.story-page.act-3 .subsection-deck { color: #b89; }
+.story-page.act-3 .pull-quote { border-left-color: #c44; background: rgba(196, 68, 68, 0.08); }
+
+/* Act 4: Balance — Reflective, muted, contemplative */
+.story-page.act-4 { background: #1a1f2a; color: #e8ecf0; }
+.story-page.act-4 h1, .story-page.act-4 h2, .story-page.act-4 h3 { color: #7a9cb4; }
+.story-page.act-4 .story-content { background: rgba(26, 31, 42, 0.95); border-color: #4a5a6b; }
+.story-page.act-4 .subsection-deck { color: #9ab; }
+.story-page.act-4 .pull-quote { border-left-color: #7a9cb4; background: rgba(122, 156, 180, 0.08); }
 
 .narrator-voice { font-family:'Merriweather',serif; font-style:italic; color:inherit; font-size:1.1rem; margin:0 0 1rem; }
 .subsection-deck { font-family:'Merriweather',serif; font-style:italic; color:var(--text-dim); margin:0 0 20px; font-size:1.05rem; }

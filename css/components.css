@@ -15,10 +15,52 @@ nav { display:flex; justify-content:space-between; align-items:center; padding:1
 .story-icon:hover i { color:#fff; }
 .icon-label { position:absolute; bottom:-35px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,0.85); padding:5px 12px; border-radius:3px; font-size:0.7rem; color:var(--gold); white-space:nowrap; opacity:0; transition:opacity var(--fast); font-family:'Cinzel',serif; text-transform:uppercase; letter-spacing:1px; }
 .story-icon:hover .icon-label { opacity:1; }
-.icon-act1 { top:55%; left:25%; } .icon-act2 { top:18%; left:78%; }
+.icon-act1 { 
+    top:55%; left:25%; 
+} 
+.icon-act2 { 
+    top:18%; left:78%; 
+}
+.icon-act3 { 
+    top: 65%; 
+    left: 65%; 
+}
+.icon-act4 { 
+    top: 75%; 
+    left: 35%; 
+}
+/* Pulse animation with staggered delays for 4 icons */
+@keyframes pulse { 
+    0%,100% { box-shadow:0 0 15px rgba(212,175,55,0.4); } 
+    50% { box-shadow:0 0 25px rgba(212,175,55,0.6); } 
+}
 
-@keyframes pulse { 0%,100% { box-shadow:0 0 15px rgba(212,175,55,0.4); } 50% { box-shadow:0 0 25px rgba(212,175,55,0.6); } }
-.story-icon { animation:pulse 3s infinite; } .story-icon:nth-child(2) { animation-delay:1.5s; }
+.story-icon { 
+    animation: pulse 3s infinite; 
+}
+.story-icon:nth-child(1) { animation-delay: 0s; }
+.story-icon:nth-child(2) { animation-delay: 0.75s; }
+.story-icon:nth-child(3) { animation-delay: 1.5s; }
+.story-icon:nth-child(4) { animation-delay: 2.25s; }
+
+
+@media (max-width:768px) {
+    .hero h1 { font-size:1.8rem; padding:10px 20px; }
+    .hero-deck { font-size:0.95rem; padding:0 15px; }
+    .story-icon { width:55px; height:55px; }
+    .story-icon i { font-size:1.3rem; }
+    
+    .icon-act1 { top: 55%; left: 20%; }
+    .icon-act2 { top: 30%; left: 75%; }
+    .icon-act3 { top: 65%; left: 70%; }
+    .icon-act4 { top: 75%; left: 25%; }
+    
+    .nav-links { display:none; }
+    .story-content { padding:30px 20px; }
+    .data-panel { width:95vw; }
+    .act-navigation { flex-direction:column; gap:12px; }
+    .act-nav-btn { justify-content:center; }
+}
 
 .traveler { position:absolute; width:45px; height:45px; background:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; pointer-events:none; opacity:0; transition:opacity var(--fast); z-index:20; box-shadow:0 0 20px rgba(212,175,55,0.8); animation:bounce 0.6s ease infinite alternate; }
 .traveler i { color:var(--bg-darker); font-size:1.3rem; }
