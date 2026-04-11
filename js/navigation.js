@@ -10,7 +10,7 @@ const state = {
     },
     iconPos: { 
         act1: { top: '55%', left: '25%' }, 
-        act2: { top: '18%', left: '78%' },
+        act2: { top: '21%', left: '50%' },
         act3: { top: '65%', left: '65%' },
         act4: { top: '75%', left: '35%' }
     }

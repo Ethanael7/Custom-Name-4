@@ -50,7 +50,7 @@ nav { display:flex; justify-content:space-between; align-items:center; padding:1
 .icon-label { position:absolute; bottom:-35px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,0.85); padding:5px 12px; border-radius:3px; font-size:0.7rem; color:var(--gold); white-space:nowrap; opacity:0; transition:opacity var(--fast); font-family:'Cinzel',serif; text-transform:uppercase; letter-spacing:1px; }
 .story-icon:hover .icon-label { opacity:1; }
 .icon-act1 { top:55%; left:25%; }
-.icon-act2 { top:18%; left:78%; }
+.icon-act2 { top:25%; left:69%; }
 .icon-act3 { top:65%; left:65%; }
 .icon-act4 { top:75%; left:35%; }
 
