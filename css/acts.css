@@ -1,17 +1,195 @@
-.story-page.act-1 { background:var(--act1-bg); color:var(--act1-text); }
+.story-page {
+    position:relative;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.story-page::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:0;
+}
+
+.story-page > * {
+    position:relative;
+    z-index:1;
+}
+
+/* Act 1 */
+.story-page.act-1 {
+    background-image:
+        linear-gradient(rgba(245, 241, 230, 0.35), rgba(245, 241, 230, 0.9)),
+        url("../images/bucketPic.jpeg");
+    color:var(--act1-text);
+}
+.story-page.act-1 h1,
+.story-page.act-1 h2,
+.story-page.act-1 h3 {
+    color:#8b6914;
+}
+.story-page.act-1 .story-content {
+    background:rgba(48, 47, 46, 0.747);
+    border-color:var(--act1-accent);
+}
+.story-page.act-1 .subsection-deck {
+    color:#6b5a3a;
+}
+
+/* Act 2 */
+.story-page.act-2 {
+    background-image:
+        linear-gradient(rgba(10, 15, 30, 0.35), rgba(10, 15, 30, 0.9)),
+        url("../images/buildingPic.jpeg");
+    color:var(--act2-text);
+}
+.story-page.act-2 h1,
+.story-page.act-2 h2,
+.story-page.act-2 h3 {
+    color:#7a9cc4;
+}
+.story-page.act-2 .story-content {
+    background:rgba(18,18,24,0.747);
+    border-color:var(--act2-steel);
+}
+.story-page.act-2 .subsection-deck {
+    color:#8a9ab6;
+}
+
+/* Act 3 */
+.story-page.act-3 {
+    background-image:
+        linear-gradient(rgba(20, 5, 5, 0.35), rgba(20, 5, 5, 0.9)),
+        url("../images/fruitStandPic.jpeg");
+    color:#f0e0d0;
+}
+.story-page.act-3 h1,
+.story-page.act-3 h2,
+.story-page.act-3 h3 {
+    color:#c44;
+}
+.story-page.act-3 .story-content {
+    background:rgba(26,15,15,0.747);
+    border-color:#8b2323;
+}
+.story-page.act-3 .subsection-deck {
+    color:#b89;
+}
+.story-page.act-3 .pull-quote {
+    border-left-color:#c44;
+    background:rgba(196, 68, 68, 0.08);
+}
+
+/* Act 4 */
+.story-page.act-4 {
+    background-image:
+        linear-gradient(rgba(20, 25, 35, 0.35), rgba(20, 25, 35, 0.8)),
+        url("../images/seesawPic.jpeg");
+    color:#e8ecf0;
+}
+.story-page.act-4 h1,
+.story-page.act-4 h2,
+.story-page.act-4 h3 {
+    color:#7a9cb4;
+}
+.story-page.act-4 .story-content {
+    background:rgba(26,31,42,0.9);
+    border-color:#4a5a6b;
+}
+.story-page.act-4 .subsection-deck {
+    color:#9ab;
+}
+.story-page.act-4 .pull-quote {
+    border-left-color:#7a9cb4;
+    background:rgba(122, 156, 180, 0.08);
+}
+
+.narrator-voice {
+    font-family:'Merriweather',serif;
+    font-style:italic;
+    color:inherit;
+    font-size:1.1rem;
+    margin:0 0 1rem;
+}
+
+.subsection-deck {
+    font-family:'Merriweather',serif;
+    font-style:italic;
+    color:var(--text-dim);
+    margin:0 0 20px;
+    font-size:1.05rem;
+}
+
+.subsection {
+    margin-bottom:45px;
+    padding-bottom:35px;
+    border-bottom:1px dashed rgba(212,175,55,0.25);
+}
+
+.subsection:last-child {
+    border-bottom:none;
+    margin-bottom:20px;
+    padding-bottom:0;
+}
+
+.subsection-title {
+    font-family:'Cinzel',serif;
+    font-size:1.4rem;
+    color:var(--gold);
+    margin:0 0 18px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.pull-quote {
+    font-family:'Merriweather',serif;
+    font-style:italic;
+    border-left:4px solid var(--gold);
+    padding:15px 20px 15px 30px;
+    margin:25px 0;
+    background:rgba(212,175,55,0.08);
+    border-radius:0 6px 6px 0;
+    font-size:1.1rem;
+    position:relative;
+}
+
+.pull-quote::before {
+    content:'"';
+    position:absolute;
+    left:8px;
+    top:-10px;
+    font-size:3rem;
+    color:rgba(212,175,55,0.4);
+    font-family:serif;
+    line-height:1;
+}
+
+@media (max-width:768px) {
+    .story-page {
+        background-attachment:scroll;
+    }
+}
+
+
+
+/* old_code: */
+/* .story-page.act-1 { background:var(--act1-bg); color:var(--act1-text); }
 .story-page.act-1 h1, .story-page.act-1 h2, .story-page.act-1 h3 { color:#8b6914; }
 .story-page.act-2 { background:var(--act2-bg); color:var(--act2-text); }
 .story-page.act-2 h1, .story-page.act-2 h2, .story-page.act-2 h3 { color:#7a9cc4; }
 .story-page.act-1 .story-content { background:rgba(245,241,230,0.95); border-color:var(--act1-accent); }
-.story-page.act-2 .story-content { background:rgba(18,18,24,0.95); border-color:var(--act2-steel); }
-/* Act 3: The Cost of Power — Dark, intense, climactic */
+.story-page.act-2 .story-content { background:rgba(18,18,24,0.95); border-color:var(--act2-steel); } */
+/* Act 3: The Cost of Power — Dark, intense, climactic 
 .story-page.act-3 { background: #1a0f0f; color: #f0e0d0; }
 .story-page.act-3 h1, .story-page.act-3 h2, .story-page.act-3 h3 { color: #c44; }
 .story-page.act-3 .story-content { background: rgba(26, 15, 15, 0.95); border-color: #8b2323; }
 .story-page.act-3 .subsection-deck { color: #b89; }
-.story-page.act-3 .pull-quote { border-left-color: #c44; background: rgba(196, 68, 68, 0.08); }
+.story-page.act-3 .pull-quote { border-left-color: #c44; background: rgba(196, 68, 68, 0.08); }*/
 
-/* Act 4: Balance — Reflective, muted, contemplative */
+/* Act 4: Balance — Reflective, muted, contemplative 
 .story-page.act-4 { background: #1a1f2a; color: #e8ecf0; }
 .story-page.act-4 h1, .story-page.act-4 h2, .story-page.act-4 h3 { color: #7a9cb4; }
 .story-page.act-4 .story-content { background: rgba(26, 31, 42, 0.95); border-color: #4a5a6b; }
@@ -28,4 +206,4 @@
 .subsection-title { font-family:'Cinzel',serif; font-size:1.4rem; color:var(--gold); margin:0 0 18px; display:flex; align-items:center; gap:10px; }
 
 .pull-quote { font-family:'Merriweather',serif; font-style:italic; border-left:4px solid var(--gold); padding:15px 20px 15px 30px; margin:25px 0; background:rgba(212,175,55,0.08); border-radius:0 6px 6px 0; font-size:1.1rem; position:relative; }
-.pull-quote::before { content:'"'; position:absolute; left:8px; top:-10px; font-size:3rem; color:rgba(212,175,55,0.4); font-family:serif; line-height:1; }
+.pull-quote::before { content:'"'; position:absolute; left:8px; top:-10px; font-size:3rem; color:rgba(212,175,55,0.4); font-family:serif; line-height:1; }*/

@@ -10,7 +10,7 @@ const state = {
     },
     iconPos: { 
         act1: { top: '55%', left: '25%' }, 
-        act2: { top: '18%', left: '78%' },
+        act2: { top: '25%', left: '69%' },
         act3: { top: '65%', left: '65%' },
         act4: { top: '75%', left: '35%' }
     }
@@ -117,7 +117,7 @@ function showSection(act, id) {
     
     state.currentSection[act] = state.sections[act].indexOf(id);
     updateActButtons(act);
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' }); Made the page scroll down uneccessarily when clicking progress dots, so removed for now.
 }
 
 function handleActNav(e) {
