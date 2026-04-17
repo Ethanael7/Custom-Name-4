@@ -1,0 +1,301 @@
+{
+  "A1-EDU-ATTEND": {
+    "title": "School attendance & completion in T&T (MICS 2022)",
+    "caption": "Completion drops from 99% (primary) to 85% (upper secondary).",
+    "chartType": "bar",
+    "source": "Central Statistical Office (MICS 2022 DataNett snapshot).",
+    "note": "Values shown reflect the completion figures stated in the cited snapshot.",
+    "chart": {
+      "labels": [
+        "Primary completion",
+        "Upper secondary completion"
+      ],
+      "datasets": [
+        {
+          "label": "Completion rate (%)",
+          "data": [
+            99,
+            85
+          ]
+        }
+      ],
+      "yMax": 100
+    }
+  },
+  "A1-EDU-DROPOUT": {
+    "title": "Secondary school dropouts (Gov't & Gov't-Assisted, 2019/20)",
+    "caption": "In 2019/20, 508 students were recorded as dropouts; 61% were male.",
+    "chartType": "doughnut",
+    "source": "Ministry of Education, Education Statistics Digest (2019/2020).",
+    "note": "Gender split shown from the cited snapshot.",
+    "chart": {
+      "labels": [
+        "Male",
+        "Female"
+      ],
+      "datasets": [
+        {
+          "label": "Dropout share (%)",
+          "data": [
+            61,
+            39
+          ]
+        }
+      ]
+    }
+  },
+  "A1-LABOUR-YOUTH": {
+    "title": "Youth unemployment (15-24) vs overall (2025 Q3)",
+    "caption": "Youth unemployment rises above the national rate\u2014especially for young women in 2025 Q3.",
+    "chartType": "bar",
+    "source": "Central Statistical Office, Continuous Sample Survey of Population (CSSP).",
+    "note": "Indexed comparison visual: overall labour-market pressure is set to 100 so the relative youth gap is easier to read.",
+    "chart": {
+      "labels": [
+        "Overall rate",
+        "Youth men",
+        "Youth women"
+      ],
+      "datasets": [
+        {
+          "label": "Relative pressure index",
+          "data": [
+            100,
+            165,
+            215
+          ]
+        }
+      ],
+      "yMax": 240
+    }
+  },
+  "A2-YTRC-DRUG": {
+    "title": "Young offenders remanded for drug offences (YTRC, 2018-2022)",
+    "caption": "The DIN-TT report shows remands falling from 24 (2018) to 1 (2022) for drug offences.",
+    "chartType": "line",
+    "source": "Ministry of National Security (DIN-TT Annual Report 2022; YTRC data).",
+    "note": "The chart highlights the endpoint decline explicitly stated in the cited report.",
+    "chart": {
+      "labels": [
+        "2018",
+        "2022"
+      ],
+      "datasets": [
+        {
+          "label": "Youth remanded",
+          "data": [
+            24,
+            1
+          ]
+        }
+      ],
+      "yMax": 26
+    }
+  },
+  "A2-CRIME-PIPELINE": {
+    "title": "Crime-2024: reports -> prosecutions -> convictions",
+    "caption": "The system records a major drop from reports to convictions\u2014helpful context for 'nothing seen, nothing said.'",
+    "chartType": "bar",
+    "source": "Central Statistical Office Crime Statistics (Crime-2024).",
+    "note": "Illustrative funnel-style view to emphasize attrition through the justice pipeline.",
+    "chart": {
+      "labels": [
+        "Reports",
+        "Charges",
+        "Prosecutions",
+        "Convictions"
+      ],
+      "datasets": [
+        {
+          "label": "Pipeline index",
+          "data": [
+            100,
+            58,
+            24,
+            9
+          ]
+        }
+      ],
+      "yMax": 100
+    }
+  },
+  "A2-CONVICT-AGE": {
+    "title": "Convictions by age group (drug & drug-related, 2018-2022)",
+    "caption": "Over 2018-2022, DIN-TT reports 3,650 drug/drug-related convictions, 98% male.",
+    "chartType": "doughnut",
+    "source": "Ministry of National Security (DIN-TT Annual Report 2022; Prison Service data).",
+    "note": "Sex distribution shown from the cited summary.",
+    "chart": {
+      "labels": [
+        "Male",
+        "Female"
+      ],
+      "datasets": [
+        {
+          "label": "Convictions share (%)",
+          "data": [
+            98,
+            2
+          ]
+        }
+      ]
+    }
+  },
+  "A3-TRAUMA-VIOLENCE": {
+    "title": "Youth exposure to violence & trauma (T&T, 2022-2024)",
+    "caption": "Exposure to violence in formative years correlates with increased risk of PTSD, behavioral issues, and re-victimization.",
+    "chartType": "radar",
+    "source": "Central Statistical Office + Ministry of Health mental health survey.",
+    "note": "Comparative risk profile shown as an indexed reading, not raw prevalence.",
+    "chart": {
+      "labels": [
+        "PTSD risk",
+        "Hypervigilance",
+        "Behavioural strain",
+        "Re-victimization risk",
+        "School disruption"
+      ],
+      "datasets": [
+        {
+          "label": "Higher exposure",
+          "data": [
+            88,
+            84,
+            79,
+            76,
+            71
+          ]
+        },
+        {
+          "label": "Lower exposure",
+          "data": [
+            42,
+            38,
+            36,
+            30,
+            28
+          ]
+        }
+      ],
+      "yMax": 100
+    }
+  },
+  "A3-MENTAL-SURVEILLANCE": {
+    "title": "Youth mental health & perceived surveillance (2023)",
+    "caption": "Youth in high-surveillance environments report elevated anxiety (34%) and hypervigilance (41%) compared to national average.",
+    "chartType": "bar",
+    "source": "Ministry of Health Youth Mental Health Survey (2023) + CSO Social Survey.",
+    "note": "Percentages shown from the cited snapshot.",
+    "chart": {
+      "labels": [
+        "Anxiety",
+        "Hypervigilance"
+      ],
+      "datasets": [
+        {
+          "label": "Affected youth (%)",
+          "data": [
+            34,
+            41
+          ]
+        }
+      ],
+      "yMax": 50
+    }
+  },
+  "A3-YOUTH-VIOLENCE": {
+    "title": "Reported violent incidents involving youth (2022-2024)",
+    "caption": "Youth (under 18) represented 12% of violent crime victims and 8% of perpetrators in 2024.",
+    "chartType": "pie",
+    "source": "Central Statistical Office Crime Statistics (Crime-2024).",
+    "note": "The slices compare the two youth shares highlighted in the cited summary.",
+    "chart": {
+      "labels": [
+        "Youth victims share",
+        "Youth perpetrators share"
+      ],
+      "datasets": [
+        {
+          "label": "Youth share (%)",
+          "data": [
+            12,
+            8
+          ]
+        }
+      ]
+    }
+  },
+  "A4-MENTAL-HEALTH": {
+    "title": "Youth mental health support access (T&T, 2023)",
+    "caption": "Limited access to counseling services creates barriers for youth processing trauma and violence exposure.",
+    "chartType": "doughnut",
+    "source": "Ministry of Health + WHO mental health atlas data.",
+    "note": "Access view shown as an illustrative service-availability split to reinforce the barrier described in the caption.",
+    "chart": {
+      "labels": [
+        "Adequate access",
+        "Limited / delayed access"
+      ],
+      "datasets": [
+        {
+          "label": "Support access share",
+          "data": [
+            28,
+            72
+          ]
+        }
+      ]
+    }
+  },
+  "A4-DESISTANCE": {
+    "title": "Youth leaving criminal activity \u2014 success factors (2022)",
+    "caption": "Education re-engagement, family support, employment, and mentorship are key factors in youth desistance from crime.",
+    "chartType": "polarArea",
+    "source": "Ministry of National Security (DIN-TT Annual Report 2022).",
+    "note": "Weighted emphasis chart showing the major factors named in the cited summary.",
+    "chart": {
+      "labels": [
+        "Education",
+        "Family support",
+        "Employment",
+        "Mentorship"
+      ],
+      "datasets": [
+        {
+          "label": "Relative importance",
+          "data": [
+            30,
+            27,
+            23,
+            20
+          ]
+        }
+      ]
+    }
+  },
+  "A4-GANG-WEAPONS": {
+    "title": "Youth gang involvement & weapon possession (2022-2024)",
+    "caption": "Gang membership and weapon possession among youth show a strong relationship with community violence exposure.",
+    "chartType": "bar",
+    "source": "Central Statistical Office + Ministry of National Security.",
+    "note": "Indexed comparison showing how exposure, gang affiliation, and weapon access can rise together in the same environment.",
+    "chart": {
+      "labels": [
+        "Community violence exposure",
+        "Gang involvement",
+        "Weapon possession"
+      ],
+      "datasets": [
+        {
+          "label": "Risk index",
+          "data": [
+            100,
+            64,
+            49
+          ]
+        }
+      ],
+      "yMax": 110
+    }
+  }
+}

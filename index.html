@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The King of Settlement 4 | Narrative Experience</title>
+    <meta
+      name="description"
+      content="An immersive literary web experience inspired by The King of Settlement 4, pairing story, place, and social context."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8mwG52Sbn2Lkuh1g0XQ0R5xq8vYv5wQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="site-header__inner shell">
+        <a class="brand" href="#top">
+          <span class="brand__eyebrow">Narrative Atlas</span>
+          <span class="brand__title">Settlement 4</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="#overview">Overview</a>
+          <a href="#story-map">Story Map</a>
+          <a href="#act-1">Act I</a>
+          <a href="#act-2">Act II</a>
+          <a href="#act-3">Act III</a>
+          <a href="#act-4">Act IV</a>
+          <a href="#sources">Sources</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero__media">
+          <img
+            src="images/street.jpg"
+            alt="Street life in Settlement 4 at sunset."
+          />
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content shell">
+          <p class="hero__kicker">A literary web experience</p>
+          <h1>The King of Settlement 4</h1>
+          <p class="hero__deck">
+            A cinematic reading experience that keeps the story’s core intact: a
+            boy, a settlement, a grammar of power, and the small, stubborn idea
+            that balance might still be possible.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#story-map"
+              >Enter the settlement</a
+            >
+            <a class="button button--ghost" href="#sources"
+              >View context & sources</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="overview shell" id="overview">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Inside the settlement</p>
+          <h2>Story, place, and pressure moving together</h2>
+        </div>
+
+        <div class="overview__grid">
+          <article class="glass-card stat-card">
+            <span class="stat-card__number">4</span>
+            <h3>Acts with distinct visual moods</h3>
+            <p>
+              Each act gets its own palette, image treatment, and pacing without
+              losing the continuity of Bug’s journey.
+            </p>
+          </article>
+          <article class="glass-card stat-card">
+            <span class="stat-card__number">12</span>
+            <h3>Context panels</h3>
+            <p>
+              Social statistics available, sitting behind clean, focused prompts
+              to prevent information overload.
+            </p>
+          </article>
+          <article class="glass-card stat-card">
+            <span class="stat-card__number">1</span>
+            <h3>Single, cohesive narrative path</h3>
+            <p>
+              The experience is intended to read like a designed digital essay
+              instead of a set of isolated screens.
+            </p>
+          </article>
+        </div>
+
+        <div class="editorial-panel glass-card">
+          <p class="editorial-panel__label">Editorial direction</p>
+          <p>
+            This experience leans into three things already present in the
+            material: <strong>place</strong>, <strong>pressure</strong>, and
+            <strong>perspective</strong>. The tone remains serious and grounded,
+            the social context is preserved, and the protagonist’s inner
+            movement from observation to understanding stays at the center.
+          </p>
+        </div>
+      </section>
+
+      <section class="story-map shell" id="story-map">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Story map</p>
+          <h2>Move through the settlement by act</h2>
+        </div>
+
+        <div class="story-map__grid">
+          <a class="chapter-card chapter-card--act1" href="#act-1">
+            <div class="chapter-card__media">
+              <img
+                src="images/bucket.jpg"
+                alt="Two boys waiting near an apartment block in the settlement."
+              />
+            </div>
+            <div class="chapter-card__content">
+              <p class="chapter-card__eyebrow">Act I</p>
+              <h3>Life on the Bucket</h3>
+              <p>
+                The postcard version of the place gives way to omission,
+                dropout, and the early gravity of following the wrong model.
+              </p>
+            </div>
+          </a>
+
+          <a class="chapter-card chapter-card--act2" href="#act-2">
+            <div class="chapter-card__media">
+              <img
+                src="images/building.jpg"
+                alt="A weathered apartment block functioning as a stronghold."
+              />
+            </div>
+            <div class="chapter-card__content">
+              <p class="chapter-card__eyebrow">Act II</p>
+              <h3>The Village Castle</h3>
+              <p>
+                Architecture turns into strategy. Neglect becomes
+                infrastructure. Watching becomes labor. Silence becomes policy.
+              </p>
+            </div>
+          </a>
+
+          <a class="chapter-card chapter-card--act3" href="#act-3">
+            <div class="chapter-card__media">
+              <img
+                src="images/fruit-stand.jpg"
+                alt="A boy at a fruit stand in the settlement."
+              />
+            </div>
+            <div class="chapter-card__content">
+              <p class="chapter-card__eyebrow">Act III</p>
+              <h3>The Cost of Power</h3>
+              <p>
+                The King arrives, violence becomes theater, and mercy itself is
+                twisted into another instrument of domination.
+              </p>
+            </div>
+          </a>
+
+          <a class="chapter-card chapter-card--act4" href="#act-4">
+            <div class="chapter-card__media">
+              <img
+                src="images/seesaw.jpg"
+                alt="Children on a seesaw by the coast."
+              />
+            </div>
+            <div class="chapter-card__content">
+              <p class="chapter-card__eyebrow">Act IV</p>
+              <h3>Balance</h3>
+              <p>
+                After trauma comes a quieter reckoning: cleaning, refusal,
+                desistance, and a final lesson in leverage and equilibrium.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="place-band shell">
+        <div class="place-band__content glass-card">
+          <div>
+            <p class="place-band__eyebrow">Landscape as character</p>
+            <h2>The settlement is not a backdrop</h2>
+          </div>
+          <p>
+            The roads, kiosks, balconies, bins, rust, and abandoned play spaces
+            all do narrative work. The environment is given room to breathe
+            because the story’s power structures are embedded in the physical
+            space.
+          </p>
+        </div>
+        <div class="place-band__image">
+          <img
+            src="images/aerial.jpg"
+            alt="Aerial view of homes and greenery around Settlement 4."
+          />
+        </div>
+      </section>
+
+      <section class="act act--1" id="act-1">
+        <div class="shell">
+          <div class="act__header">
+            <p class="act__eyebrow">Act I</p>
+            <h2>Life on the Bucket</h2>
+            <p class="act__deck">
+              A backroad can look like a picture book, until you notice who the
+              picture leave out.
+            </p>
+          </div>
+
+          <div class="scene-list">
+            <article class="scene-card reveal">
+              <div class="scene-card__meta">Scene 01</div>
+              <h3>Postcard Trinidad</h3>
+              <p>
+                Settlement 4 does shine like one of them primary-school
+                illustrations: dusty road, savannah open wide, little life
+                moving easy in the heat. But inside the frame, sweetness and rot
+                are stitched together with the same thread.
+              </p>
+              <button class="context-button" data-overlay="A1-EDU-ATTEND">
+                Open context panel
+              </button>
+            </article>
+
+            <article class="scene-card reveal">
+              <div class="scene-card__meta">Scene 02</div>
+              <h3>The omitted feature</h3>
+              <p>
+                Illustrators never draw the boy planning to spend his teenage
+                years perched on a paint bucket. They do not draw the quiet
+                watching, the waiting, or that early sensation of being young
+                and already half-finished.
+              </p>
+              <button class="context-button" data-overlay="A1-EDU-DROPOUT">
+                Open context panel
+              </button>
+            </article>
+
+            <article class="scene-card reveal">
+              <div class="scene-card__meta">Scene 03</div>
+              <h3>Why school did not hold</h3>
+              <p>
+                Bug does not frame leaving school as stupidity. He frames it as
+                value. “Free education” sounds noble from a distance, but a
+                cash-in-hand logic feels immediate when classrooms feel hollow
+                and adulthood starts pressing too early.
+              </p>
+              <button class="context-button" data-overlay="A1-LABOUR-YOUTH">
+                Open context panel
+              </button>
+            </article>
+
+            <article class="scene-card reveal quote-card">
+              <div class="scene-card__meta">Scene 04</div>
+              <h3>Foster, and the gravity of following</h3>
+              <p>
+                Foster moves with certainty, and certainty has its own pull.
+                When somebody older makes drift look like direction, it becomes
+                easy to mistake proximity to confidence for a plan of your own.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="act act--2" id="act-2">
+        <div class="shell">
+          <div class="act__header">
+            <p class="act__eyebrow">Act II</p>
+            <h2>The Village Castle</h2>
+            <p class="act__deck">
+              A housing block becomes a fortress when everybody agrees it is
+              one.
+            </p>
+          </div>
+
+          <div class="split-grid">
+            <div class="stack">
+              <article class="scene-card reveal">
+                <div class="scene-card__meta">Scene 01</div>
+                <h3>Name the King, choose the side</h3>
+                <p>
+                  Power does not arrive with a crown; it arrives with enough
+                  people willing to move when one man breathes. “Winning”
+                  narrows until it means only surviving the week.
+                </p>
+              </article>
+
+              <article class="scene-card reveal">
+                <div class="scene-card__meta">Scene 02</div>
+                <h3>The chessboard</h3>
+                <p>
+                  No corner is accidental. No body placement is random. The
+                  building looks decayed from outside, but inside it is
+                  organized by sightlines, blind spots, and fear.
+                </p>
+              </article>
+
+              <article class="scene-card reveal">
+                <div class="scene-card__meta">Scene 03</div>
+                <h3>Filth as infrastructure</h3>
+                <p>
+                  Garbage, loose boards, and overgrowth do not just signal
+                  neglect. They create hiding places. Disorder becomes utility.
+                </p>
+                <button class="context-button" data-overlay="A2-YTRC-DRUG">
+                  Open context panel
+                </button>
+              </article>
+
+              <article class="scene-card reveal">
+                <div class="scene-card__meta">Scene 04</div>
+                <h3>Thursday morning: sirens and silence</h3>
+                <p>
+                  The police arrive with performance, but everyone knows how the
+                  scene ends. Nobody gets paid enough to go digging through
+                  rust, garbage, and retaliation. Questions fall. Voices vanish.
+                </p>
+                <button class="context-button" data-overlay="A2-CRIME-PIPELINE">
+                  Open context panel
+                </button>
+              </article>
+            </div>
+
+            <aside class="side-feature glass-card reveal">
+              <img
+                src="images/building.jpg"
+                alt="Multi-storey concrete building with laundry on the rails."
+              />
+              <h3>Watching is a job</h3>
+              <p>
+                Bug’s labor is not movement but attention. He sits, watches,
+                reads traffic, learns rhythm, hides a textbook, and tries to
+                keep alive a version of himself that still wants another future.
+              </p>
+              <div class="mini-scenes">
+                <div>
+                  <h4>Bodie and Bone</h4>
+                  <p>
+                    Softness and brutality coexist in the same ecosystem, but
+                    they do not carry the same social reward.
+                  </p>
+                </div>
+                <div>
+                  <h4>The double life</h4>
+                  <p>
+                    A science textbook in hand becomes an act of secrecy in a
+                    place that teaches performance before possibility.
+                  </p>
+                </div>
+                <div>
+                  <h4>Home pressure</h4>
+                  <p>
+                    Domestic strain and street logic push against each other
+                    until danger begins to feel like the simpler route.
+                  </p>
+                </div>
+                <button class="context-button" data-overlay="A2-CONVICT-AGE">
+                  Open context panel
+                </button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="act act--3" id="act-3">
+        <div class="shell">
+          <div class="act__header">
+            <p class="act__eyebrow">Act III</p>
+            <h2>The Cost of Power</h2>
+            <p class="act__deck">
+              Power doesn’t ask permission. It takes, then teaches you to thank
+              it for what it spared.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline__item reveal">
+              <span class="timeline__marker"></span>
+              <div class="timeline__content scene-card">
+                <div class="scene-card__meta">Scene 01</div>
+                <h3>Foster and Bodie at the kiosk</h3>
+                <p>
+                  Bodie is not just a dog. He is grief made portable, Bailey
+                  remembered, tenderness smuggled into a hard place. That makes
+                  him vulnerable the moment power needs a lesson.
+                </p>
+                <button
+                  class="context-button"
+                  data-overlay="A3-TRAUMA-VIOLENCE"
+                >
+                  Open context panel
+                </button>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <span class="timeline__marker"></span>
+              <div class="timeline__content scene-card">
+                <div class="scene-card__meta">Scene 02</div>
+                <h3>The King arrives</h3>
+                <p>
+                  No drumroll. No warning. Just the atmosphere changing around
+                  one man. The kiosk that once felt routine is suddenly
+                  reclassified as a stage for punishment.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <span class="timeline__marker"></span>
+              <div class="timeline__content scene-card">
+                <div class="scene-card__meta">Scene 03</div>
+                <h3>“Ice is what you must fraid”</h3>
+                <p>
+                  The King’s speech transforms intimidation into philosophy. He
+                  does not merely threaten; he interprets the world, forcing
+                  others to live inside his explanation of it.
+                </p>
+                <button
+                  class="context-button"
+                  data-overlay="A3-MENTAL-SURVEILLANCE"
+                >
+                  Open context panel
+                </button>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <span class="timeline__marker"></span>
+              <div class="timeline__content scene-card">
+                <div class="scene-card__meta">Scene 04</div>
+                <h3>The killing of Bodie</h3>
+                <p>
+                  The act is cruelty, demonstration, and message all at once.
+                  Violence becomes public grammar: who may be hurt, who may
+                  watch, and what everybody is supposed to learn from it.
+                </p>
+                <button class="context-button" data-overlay="A3-YOUTH-VIOLENCE">
+                  Open context panel
+                </button>
+              </div>
+            </article>
+
+            <article class="timeline__item reveal">
+              <span class="timeline__marker"></span>
+              <div class="timeline__content scene-card quote-card">
+                <div class="scene-card__meta">Scene 05</div>
+                <h3>Forced gratitude</h3>
+                <p>
+                  What remains most chilling is not only the violence but the
+                  ritual after it: the demand that Foster say thank you. The
+                  King does not just seize power; he scripts emotional
+                  submission.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="act act--4" id="act-4">
+        <div class="shell">
+          <div class="act__header">
+            <p class="act__eyebrow">Act IV</p>
+            <h2>Balance</h2>
+            <p class="act__deck">
+              After the storm comes a quieter test: whether the damage will
+              define you, or instruct you.
+            </p>
+          </div>
+
+          <div class="act-four-layout">
+            <div class="act-four-layout__left stack">
+              <article class="scene-card reveal">
+                <div class="scene-card__meta">Scene 01</div>
+                <h3>Aftermath</h3>
+                <p>
+                  Bug and Foster are left in a silence that language cannot
+                  easily cross. Sometimes the first sign of trauma is not what
+                  is said, but what never arrives.
+                </p>
+                <button class="context-button" data-overlay="A4-MENTAL-HEALTH">
+                  Open context panel
+                </button>
+              </article>
+
+              <article class="scene-card reveal">
+                <div class="scene-card__meta">Scene 02</div>
+                <h3>Cleaning the house</h3>
+                <p>
+                  Cleaning becomes more than domestic labor. It becomes a
+                  controlled answer to chaos: a way to put hands on a world that
+                  has become morally slippery.
+                </p>
+              </article>
+
+              <article class="scene-card reveal">
+                <div class="scene-card__meta">Scene 03</div>
+                <h3>Refusal to return</h3>
+                <p>
+                  Bug’s break is not triumphant, but it is real. He cannot undo
+                  what he has seen, yet he can step away from continuing it.
+                </p>
+                <button class="context-button" data-overlay="A4-DESISTANCE">
+                  Open context panel
+                </button>
+              </article>
+            </div>
+
+            <div class="act-four-layout__right">
+              <article class="scene-card scene-card--featured reveal">
+                <img
+                  src="images/seesaw.jpg"
+                  alt="Children playing on a seesaw near the beach."
+                />
+                <div class="scene-card__body">
+                  <div class="scene-card__meta">Scene 04</div>
+                  <h3>The seesaw lesson</h3>
+                  <p>
+                    There is no artificial happy ending. Instead, there is
+                    understanding: load, effort, fulcrum, equilibrium. Balance
+                    is not sameness. It is placement.
+                  </p>
+                  <div class="pull-quote">
+                    <p>Load. Effort. Fulcrum.</p>
+                    <p>Equilibrium. Balance. Advantage.</p>
+                  </div>
+                  <p>
+                    That final image allows the story to end not with innocence
+                    restored, but with perception sharpened. Bug does not escape
+                    the settlement by forgetting it. He reads it better.
+                  </p>
+                  <button class="context-button" data-overlay="A4-GANG-WEAPONS">
+                    Open context panel
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery shell">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Visual echoes</p>
+          <h2>Images that reinforce the story’s emotional geography</h2>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--wide">
+            <img
+              src="images/street.jpg"
+              alt="Street scene at sunset in the settlement."
+            />
+            <figcaption>Street as witness, stage, and system.</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="images/bucket.jpg" alt="Young men by the roadside." />
+            <figcaption>Watching becomes work.</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="images/fruit-stand.jpg"
+              alt="Boy leaning at a fruit stand."
+            />
+            <figcaption>
+              Ordinary commerce beside ordinary precarity.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="sources shell" id="sources">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Sources & attribution</p>
+          <h2>The contextual layer behind the narrative prompts</h2>
+        </div>
+
+        <div class="sources__grid">
+          <article class="glass-card">
+            <h3>Official statistics</h3>
+            <ul>
+              <li>
+                Central Statistical Office — MICS 2022, Crime Statistics 2024,
+                CSSP labour data
+              </li>
+              <li>
+                Ministry of Education — Education Statistics Digest 2019/20
+              </li>
+              <li>
+                Ministry of National Security — DIN-TT Annual Report 2022, YTRC
+                and prison data
+              </li>
+              <li>
+                Ministry of Health and related youth mental health survey
+                references
+              </li>
+            </ul>
+          </article>
+
+          <article class="glass-card">
+            <h3>Literary anchor</h3>
+            <p>
+              <em>The King of Settlement 4</em> by Kevin Jared Hosein remains
+              the narrative foundation. This site preserves the story’s social
+              atmosphere, emotional arc, and key scenes while presenting them in
+              a more immersive digital format.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>
+          A cinematic, readable, and deliberate experience built around the core
+          story.
+        </p>
+        <button
+          class="back-to-top back-to-top--footer"
+          id="footerBackToTop"
+          type="button"
+        >
+          Back to top
+        </button>
+      </div>
+    </footer>
+
+    <button
+      class="back-to-top back-to-top--floating"
+      id="backToTop"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <dialog
+      class="context-modal"
+      id="contextModal"
+      aria-labelledby="contextTitle"
+    >
+      <div class="context-modal__header">
+        <div>
+          <p class="context-modal__eyebrow">Context panel</p>
+          <h2 id="contextTitle">Context title</h2>
+        </div>
+        <button
+          class="context-modal__close"
+          type="button"
+          aria-label="Close context panel"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="context-modal__body">
+        <div class="context-modal__chart" aria-hidden="true">
+          <canvas
+            id="contextChart"
+            aria-label="Context chart"
+            role="img"
+          ></canvas>
+        </div>
+        <p id="contextCaption"></p>
+        <p class="context-modal__note" id="contextNote"></p>
+        <p class="context-modal__source" id="contextSource"></p>
+      </div>
+    </dialog>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
